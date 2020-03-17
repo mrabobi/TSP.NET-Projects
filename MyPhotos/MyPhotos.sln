@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29905.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPhotos", "MyPhotos\MyPhotos.csproj", "{62242375-0B89-44FD-AA6B-3EDE5351355D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotosGUI", "PhotosGUI\PhotosGUI.csproj", "{FA3BE22D-B167-49BE-B634-3DE8DA76A952}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62242375-0B89-44FD-AA6B-3EDE5351355D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62242375-0B89-44FD-AA6B-3EDE5351355D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62242375-0B89-44FD-AA6B-3EDE5351355D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62242375-0B89-44FD-AA6B-3EDE5351355D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA3BE22D-B167-49BE-B634-3DE8DA76A952}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA3BE22D-B167-49BE-B634-3DE8DA76A952}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA3BE22D-B167-49BE-B634-3DE8DA76A952}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA3BE22D-B167-49BE-B634-3DE8DA76A952}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8309A685-73B3-4A1E-9484-4F7E1CF107D2}
+	EndGlobalSection
+EndGlobal
