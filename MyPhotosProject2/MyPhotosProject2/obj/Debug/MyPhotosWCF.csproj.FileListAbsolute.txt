@@ -1,0 +1,11 @@
+D:\dev\ProiecteTSPNET\MyPhotosProject2\MyPhotosProject2\bin\Debug\MyPhotosProject2.dll
+D:\dev\ProiecteTSPNET\MyPhotosProject2\MyPhotosProject2\bin\Debug\MyPhotosProject2.pdb
+D:\dev\ProiecteTSPNET\MyPhotosProject2\MyPhotosProject2\obj\Debug\MyPhotosWCF.csprojAssemblyReference.cache
+D:\dev\ProiecteTSPNET\MyPhotosProject2\MyPhotosProject2\obj\Debug\MyPhotosProject2.dll
+D:\dev\ProiecteTSPNET\MyPhotosProject2\MyPhotosProject2\obj\Debug\MyPhotosProject2.pdb
+D:\dev\ProiecteTSPNET\MyPhotosProject2\MyPhotosProject2\bin\Debug\MyPhotos.dll
+D:\dev\ProiecteTSPNET\MyPhotosProject2\MyPhotosProject2\bin\Debug\EntityFramework.dll
+D:\dev\ProiecteTSPNET\MyPhotosProject2\MyPhotosProject2\bin\Debug\MyPhotos.pdb
+D:\dev\ProiecteTSPNET\MyPhotosProject2\MyPhotosProject2\bin\Debug\MyPhotos.dll.config
+D:\dev\ProiecteTSPNET\MyPhotosProject2\MyPhotosProject2\bin\Debug\EntityFramework.xml
+D:\dev\ProiecteTSPNET\MyPhotosProject2\MyPhotosProject2\obj\Debug\MyPhotosWCF.csproj.CopyComplete
