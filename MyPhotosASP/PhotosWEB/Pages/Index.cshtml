@@ -1,0 +1,108 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<p style="text-align: center">
+    <img src="~/media/logo.png" width="300" />
+</p>
+
+
+
+<form>
+    <p>
+        <select asp-for="SearchCategory">
+            <option value="Nume">Nume</option>
+            <option value="Descriere">Descriere</option>
+            <option value="Category">Categorie</option>
+            <option value="Person">Persoana</option>
+            <option value="Location">Locatie</option>
+
+        </select>
+        <input type="text" asp-for="SearchString" />
+        <input type="submit" value="Filter" />
+        
+    </p>
+</form>
+<h4 >Afisare pentru <b style="color:Tomato;">@Model.Pics.Count()</b> imagini</h4>   
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                ID
+            </th>
+            <th>
+                Nume
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Pics[0].Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Pics[0].Categories)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Pics[0].Location)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Pics[0].Person)
+            </th>
+            <th>
+                Data
+            </th>
+            <th>
+                Preview
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Pics)
+        {
+        <tr style="font-size:small">
+            <td>
+                @Html.DisplayFor(modelItem => item.ID_IMG)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name_img)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @foreach (var c in item.Categories)
+                {
+                    @Html.DisplayFor(modelItem => c.CategoryName)
+                    <br />
+                }
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Location)
+            </td>
+            <td>
+                @foreach (var p in item.Person)
+                {
+                    @Html.DisplayFor(modelItem => p.FirstName)
+                    <br />
+                }
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Data_create)
+            </td>
+            <td>
+                @{
+                    byte[] imageByteData = System.IO.File.ReadAllBytes(item.Path);
+                    var base64 = Convert.ToBase64String(imageByteData);
+                    var imgSrc = String.Format("data:image/gif;base64,{0}", base64);
+                }
+
+                <img src="@imgSrc" width="50px" />
+            </td>
+            <td>
+                <a asp-page="Other/Details" asp-route-id="@item.ID_IMG">Details</a>
+            </td>
+                </tr>
+        }
+    </tbody>
+</table>
+

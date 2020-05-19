@@ -1,0 +1,38 @@
+﻿@page
+@model PhotosWEB.Pages.Other.DetailsModel
+@{
+    ViewData["Title"] = "Details";
+}
+
+    <p style="text-align: center">
+        <img src="~/media/logo.png" width="300" />
+        <h3>Details about @ViewData["Post"]</h3>
+
+        <div class="form">
+            <h4 style="color:Tomato;">Name: </h4><h4> @Model.Pic.Name_img</h4>
+            <h4 style="color:Tomato;">Description:</h4><h4> @Model.Pic.Description</h4>
+            <h4 style="color:Tomato;">Location:</h4> <h4>@Model.Pic.Location</h4>
+            <h4 style="color:Tomato;">Category: </h4>
+            @foreach (var item in Model.Pic.Categories)
+            {
+                <h5>- @item.CategoryName</h5>
+            }
+            <h4 style="color:Tomato;">Persons: </h4>
+            @foreach (var item in Model.Pic.Person)
+            {
+                <h5>- @item.FirstName</h5>
+            }
+            <h4 style="color:Tomato;">Date:</h4><h4> @Model.Pic.Data_create</h4>
+            <h4 style="color:Tomato;">Path:</h4><h4> @Model.Pic.Path</h4>
+
+            @{
+                byte[] imageByteData = System.IO.File.ReadAllBytes(Model.Pic.Path);
+                var base64 = Convert.ToBase64String(imageByteData);
+                var imgSrc = String.Format("data:image/gif;base64,{0}", base64);
+            }
+            <img src="@imgSrc" width="300" />
+        </div>
+    </p>
+
+
+
